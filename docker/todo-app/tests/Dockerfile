@@ -2,4 +2,4 @@ FROM mjgargani/puppeteer:trybe1.0
 WORKDIR /
 ADD node_modules.tar.gz todotests
 COPY . todotests
-ENTRYPOINT ["npm start"]
+CMD ["npm", "test"]

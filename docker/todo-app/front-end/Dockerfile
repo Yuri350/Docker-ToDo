@@ -3,4 +3,4 @@ WORKDIR /
 ADD node_modules.tar.gz .
 COPY . todofrontend
 EXPOSE 3000
-ENTRYPOINT ["npm start"]
+CMD ["npm", "start"]
